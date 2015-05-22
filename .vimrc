@@ -27,3 +27,4 @@ set backspace=indent,eol,start
 
 set diffopt+=vertical
  
+syntax on
