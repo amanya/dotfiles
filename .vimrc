@@ -26,5 +26,15 @@ set undolevels=1000
 set backspace=indent,eol,start	
 
 set diffopt+=vertical
+
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
+
+set backupdir=$HOME/.vim/backup
+set directory=$HOME/.vim/swap
  
 syntax on
+
+
