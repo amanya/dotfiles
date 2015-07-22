@@ -39,3 +39,6 @@ syntax on
 
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
+" Ctrl-p support
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
