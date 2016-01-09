@@ -1,5 +1,8 @@
 execute pathogen#infect()
 
+filetype plugin on
+filetype plugin indent on
+
 set number
 set nowrap	
 set showbreak=+++	
@@ -36,9 +39,21 @@ set backupdir=$HOME/.vim/backup
 set directory=$HOME/.vim/swap
  
 syntax on
+set background=dark
 
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype dart setlocal ts=2 sts=2 sw=2
 
 " Ctrl-p support
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+let mapleader = ','
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+noremap <leader>l :Align
+
+autocmd FileType python setlocal completeopt-=preview
+
+let g:virtualenv_directory = '~/.venvs'
