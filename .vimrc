@@ -6,7 +6,6 @@ filetype plugin indent on
 set number
 set nowrap	
 set showbreak=+++	
-"set textwidth=100	
 set showmatch	
 set visualbell	
  
@@ -57,3 +56,14 @@ noremap <leader>l :Align
 autocmd FileType python setlocal completeopt-=preview
 
 let g:virtualenv_directory = '~/.venvs'
+
+"" Go-vim support
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+
