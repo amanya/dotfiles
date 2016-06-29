@@ -45,6 +45,8 @@ autocmd Filetype dart setlocal ts=2 sts=2 sw=2
 
 " Ctrl-p support
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+" UltiSnips
+set runtimepath+=~/.vim/snippets
 
 let mapleader = ','
 noremap <C-h> <C-w>h
@@ -55,7 +57,7 @@ noremap <leader>l :Align
 
 autocmd FileType python setlocal completeopt-=preview
 
-let g:virtualenv_directory = '~/.venvs'
+let g:virtualenv_directory = '~/.virtualenvs'
 
 "" Go-vim support
 au FileType go nmap <leader>r <Plug>(go-run)
@@ -66,4 +68,3 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
-
