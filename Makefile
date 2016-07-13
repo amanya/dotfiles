@@ -1,5 +1,7 @@
 .PHONY: all bin dotfiles
 
+all: dotfiles
+
 bin:
 	echo "TODO"
 
