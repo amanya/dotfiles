@@ -13,4 +13,3 @@ dotfiles:
 	done; \
 	ln -sfn $(CURDIR)/.gnupg/gpg.conf $(HOME)/.gnupg/gpg.conf;
 	ln -fn $(CURDIR)/.gitignore $(HOME)/.gitignore;
-
